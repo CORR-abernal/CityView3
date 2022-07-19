@@ -1,0 +1,6 @@
+$font-color: #fff;
+$background-color: #00704a;
+$button-color: $background-color;
+$interactive-font-color: $font-color;
+$border-color--active: $interactive-font-color;
+$background-color--active: lighten(#00704a, 25%);
