@@ -1,0 +1,176 @@
+/* No CSS */
+/* # sourceMappingURL=index.css.map */
+
+html,
+body,
+#viewDiv {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  --calcite-ui-text-1: #036;
+  --calcite-ui-text-2: #369;
+  --calcite-ui-text-3: #036;
+  --calcite-ui-text-link: #cc3333;
+  --calcite-ui-icon-color: #369;
+  --calcite-ui-border-input: #369;
+  --calcite-ui-brand: #369;
+  --calcite-ui-brand-hover: #369;
+  --caclite-ui-brand-press: #fff;
+}
+@media only screen and (max-width: 860px) {
+  .map_div {
+    height: calc(100% - 196px);
+  }
+}
+@media only screen and (min-width: 861px) {
+  .map_div {
+    height: 100%;
+  }
+}
+/*Sass ESRI API Theme*/
+
+.sassy-theme .esri-widget,
+.sassy-theme .esri-widget--button,
+.sassy-theme .esri-menu,
+.sassy-theme .esri-popup__main-container,
+.sassy-theme .esri-popup__pointer-direction,
+.sassy-theme .esr-popup__button,
+.sassy-theme .esri-input,
+.sassy-theme .esri-button,
+.sassy-theme .esri-widget {
+  background-color: #fff;
+  color: #036;
+  font: "Montserrat";
+}
+
+.sassy-theme .esri-widget--button:focus,
+.sassy-theme .esri-widget--button:hover,
+.sassy-theme .esri-menu li:focus,
+.sassy-theme .esri-menu li:hover {
+  background-color: #f3f3f3;
+  color: #036;
+}
+
+.sassy-theme .esri-button:focus,
+.sassy-theme .esri-button:hover {
+  color: #369;
+}
+
+.sassy-theme .esri-search__input::-moz-placeholder {
+  color: #036;
+  opacity: 1;
+  font-family: montserrat;
+}
+.sassy-theme .esri-search__input:-ms-input-placeholder {
+  color: #036;
+}
+.sassy-theme .esri-search__input::-webkit-input-placeholder {
+  color: #036;
+}
+
+body {
+  display: flex;
+}
+
+calcite-loader {
+  align-self: center;
+  justify-self: center;
+}
+
+#info-content {
+  padding: 0.75rem;
+}
+
+calcite-rating {
+  margin-top: 0.25rem;
+}
+
+/* Custom header items */
+.custom-header {
+  display: flex;
+  padding: 0 1rem;
+  background-color: var(--calcite-ui-foreground-1);
+}
+
+.custom-header-controls {
+  margin-inline-start: auto;
+  display: flex;
+  align-self: center;
+  font-family: montserrat;
+}
+
+.custom-label-wrapper {
+  display: flex;
+  border: 1px solid var(--calcite-ui-border-1);
+  margin-inline-start: 1rem;
+  padding: 0 0.5rem;
+}
+
+.header-switch {
+  margin: 0 0.5rem;
+}
+.calcite-button {
+  padding: -2px;
+}
+.calcite-button:hover {
+  transform: scale(1.1);
+  justify-content: center;
+}
+.branding {
+  border: #003366 solid 2px;
+}
+.logo-light {
+  display: flex;
+  width: 50px;
+  height: 40px;
+  padding-right: 15px;
+  align-self: center;
+}
+.title-light {
+  font-family: montserrat;
+  font-size: 25px;
+  font-weight: bold;
+  color: #036;
+  padding-top: 10px;
+}
+
+/*Widgets*/
+
+.invisible {
+  visibility: collapse;
+}
+
+.esri-expand .esri-expand__content {
+  box-shadow: none;
+}
+
+.about {
+  font-family: Montserrat;
+  text-size-adjust: 20px;
+  color: #336699;
+}
+
+/*Mobile Panel*/
+.sassy-theme--mobile-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+/* .sassy-theme--calcite-panel,
+.esri-widget {
+  border: solid red 2px;
+  left: 0;
+  right: 0;
+} */
+.sassy-theme--calcite-panel__alt {
+  position: relative;
+}
+
+.action-group {
+  position: fixed;
+  display: flex;
+}
+
+/***************************************Calcite Test App Content*************************/
