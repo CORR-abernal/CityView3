@@ -48,7 +48,7 @@ require([
   const view = new MapView({
     container: "viewDiv",
     map: map,
-    padding: { left: 50 },
+    padding: { left: 100 },
     popup: {
       dockEnabled: true,
       dockOptions: {
