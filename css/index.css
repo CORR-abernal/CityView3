@@ -39,7 +39,7 @@ body,
 .sassy-theme .esri-button,
 .sassy-theme .esri-widget {
   background-color: #fff;
-  color: #036;
+  color: #003366;
   font: "Montserrat";
 }
 
@@ -47,7 +47,7 @@ body,
 .sassy-theme .esri-widget--button:hover,
 .sassy-theme .esri-menu li:focus,
 .sassy-theme .esri-menu li:hover {
-  background-color: #f3f3f3;
+  background-color: #488858;
   color: #036;
 }
 
