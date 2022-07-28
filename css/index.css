@@ -47,8 +47,8 @@ body,
 .sassy-theme .esri-widget--button:hover,
 .sassy-theme .esri-menu li:focus,
 .sassy-theme .esri-menu li:hover {
-  background-color: #488858;
-  color: #036;
+  background-color: #336699;
+  color: rgb(255, 255, 255);
 }
 
 .sassy-theme .esri-button:focus,
@@ -133,6 +133,17 @@ calcite-rating {
   color: #036;
   padding-top: 10px;
 }
+
+/*Map Elements*/
+
+.esri-scale-bar.esri-widget {
+  background: transparent;
+  box-shadow: none;
+}
+/* .esri-scale-bar__label,
+.esri-scale-bar__line{
+  color: #003366;
+  font-family: montserrat; */
 
 /*Widgets*/
 

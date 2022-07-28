@@ -48,7 +48,7 @@ require([
   const view = new MapView({
     container: "viewDiv",
     map: map,
-    padding: { left: 100 },
+    padding: { left: 50 },
     popup: {
       dockEnabled: true,
       dockOptions: {
@@ -80,13 +80,6 @@ require([
     actionBarExpanded = !actionBarExpanded;
     view.padding = {
       left: actionBarExpanded ? 180 : 50,
-    };
-  });
-  let actionGroupExpanded = false;
-  document.addEventListener("calciteActionGroupToggle", (event) => {
-    actionGroupExpanded = !actionGroupExpanded;
-    view.padding = {
-      bottom: actionGroupExpanded ? 180 : 50,
     };
   });
 
