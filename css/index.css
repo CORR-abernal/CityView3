@@ -17,7 +17,7 @@ body,
   --calcite-ui-brand-hover: #369;
   --caclite-ui-brand-press: #fff;
 }
-@media only screen and (max-width: 860px) {
+/* @media only screen and (max-width: 860px) {
   .map_div {
     height: calc(100% - 196px);
   }
@@ -26,7 +26,7 @@ body,
   .map_div {
     height: 100%;
   }
-}
+} */
 /*Sass ESRI API Theme*/
 
 .sassy-theme .esri-widget,

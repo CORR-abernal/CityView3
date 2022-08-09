@@ -164,7 +164,6 @@ require([
     const { title, description } = map.portalItem;
     document.querySelector("#header-title").textContent = title;
     document.querySelector("#item-description").innerHTML = description;
-
     let activeWidget;
 
     const handleActionBarClick = ({ target }) => {
@@ -242,4 +241,19 @@ require([
     // document.querySelector("calcite-switch").addEventListener("calciteSwitchChange", toggleThemes);
   });
   //note
+  let TextSymbol = {
+    type: "text", // autocasts as new TextSymbol()
+    color: "white",
+    haloColor: "black",
+    haloSize: "1px",
+    text: "You are here",
+    xoffset: 3,
+    yoffset: 3,
+    font: {
+      // autocasts as new Font()
+      size: 12,
+      family: "Josefin Slab",
+      weight: "bold",
+    },
+  };
 });

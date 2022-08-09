@@ -78,34 +78,36 @@
 			<!--Mobile widget Panel-->
 
 			<!-- map-specific panels (each one provides a div for a ArcGIS JavaScript API widget) -->
-			<calcite-panel intl-close="Close" closable="" heading="Layers" height-scale="l" data-panel-id="layers"
-				hidden>
+			<calcite-panel heading="Layers" data-panel-id="layers" dismissible="" resizable="" hidden>
+				<header></header>
 				<div id="layers-container"></div>
 			</calcite-panel>
-			<calcite-panel heading="Basemaps" height-scale="l" data-panel-id="basemaps" hidden>
+			<calcite-panel heading="Basemaps" height-scale="l" data-panel-id="basemaps" dismissible="" hidden>
 				<div id="basemaps-container"></div>
 			</calcite-panel>
-			<calcite-panel heading="Legend" height-scale="l" data-panel-id="legend" hidden>
+			<calcite-panel heading="Legend" height-scale="l" data-panel-id="legend" dismissible="" hidden>
 				<div id="legend-container"></div>
 			</calcite-panel>
-			<calcite-panel eading="Bookmarks" height-scale="l" data-panel-id="bookmarks" hidden>
+			<calcite-panel eading="Bookmarks" height-scale="l" data-panel-id="bookmarks" dismissible="" hidden>
 				<div id="bookmarks-container"></div>
 			</calcite-panel>
-			<calcite-panel heading="Sketch" height-scale="l" data-panel-id="Sketch" hidden>
+			<calcite-panel heading="Sketch" height-scale="l" data-panel-id="Sketch" dismissible="" hidden>
 				<div id="sketch-container"></div>
 			</calcite-panel>
-			<calcite-panel heading="Distance Measurement" height-scale="l" data-panel-id="DistanceMeasurement2D" hidden>
+			<calcite-panel heading="Distance Measurement" height-scale="l" data-panel-id="DistanceMeasurement2D"
+				dismissible="" hidden>
 				<div id="DistanceMeasurement2D-container"></div>
 			</calcite-panel>
-			<calcite-panel heading="Area Measurement" height-scale="l" data-panel-id="AreaMeasurement2D" hidden>
+			<calcite-panel heading="Area Measurement" height-scale="l" data-panel-id="AreaMeasurement2D" dismissible=""
+				hidden>
 				<div id="AreaMeasurement2D-container"></div>
 			</calcite-panel>
-			<calcite-panel heading="Print" height-scale="l" data-panel-id="print" hidden>
+			<calcite-panel heading="Print" height-scale="l" data-panel-id="print" dismissible="" hidden>
 				<div id="print-container"></div>
 			</calcite-panel>
 
 			<!-- info panel (populates with info from the web map) -->
-			<calcite-panel heading="About" data-panel-id="information" hidden class="sassy-theme--calcite-panel__alt">
+			<calcite-panel heading="About" data-panel-id="information" dismissible="" hidden>
 				<div id="info-content">
 					<!--<img id="item-thumbnail" alt="webmap thumbnail" />-->
 					<div id="item-description">
@@ -119,7 +121,6 @@
 					</p>
 				</div>
 			</calcite-panel>
-
 		</calcite-shell-panel>
 
 		<!--Map View-->
@@ -152,7 +153,7 @@
 				<!--Mobile widget Panel-->
 
 				<!-- map-specific panels (each one provides a div for a ArcGIS JavaScript API widget) -->
-				<calcite-panel intl-close="Close" closable="" heading="Layers" height-scale="s" data-panel-id="layers"
+				<!-- <calcite-panel intl-close="Close" closable="" heading="Layers" height-scale="s" data-panel-id="layers"
 					hidden>
 					<div id="layers-container"></div>
 				</calcite-panel>
@@ -180,12 +181,12 @@
 				</calcite-panel>
 
 				<!-- info panel (populates with info from the web map) -->
-				<calcite-panel heading="About" data-panel-id="information" hidden>
+				<!-- <calcite-panel heading="About" data-panel-id="information" hidden>
 					<div id="info-content">
 						<!--<img id="item-thumbnail" alt="webmap thumbnail" />-->
-						<div id="item-description">
-							<!--dynamically populated-->
-						</div>
+				<!-- <div id="item-description"> -->
+				<!--dynamically populated-->
+				<!-- </div>
 						<p class="about">This Application contains all public content of the City of Round Rock.
 							This map is intended for viewing purposes only. <br><br> To download this data
 							please visit the <br>
@@ -193,7 +194,7 @@
 									target="_blank">City of Round Rock GeoHub</a></strong>
 						</p>
 					</div>
-				</calcite-panel>
+				</calcite-panel> -->
 			</calcite-shell-panel>
 		</div>
 	</calcite-shell>
