@@ -33,6 +33,7 @@
 
 
 	<calcite-loader active></calcite-loader>
+
 	<calcite-shell content-behind hidden>
 		<!--  Header slot  -->
 		<div slot="header" class="custom-header">
@@ -41,7 +42,6 @@
 			<h2 id="header-title" class="title-light">
 				<!--dynamically populated-->
 			</h2>
-
 			<!-- Address Checker button Desktop -->
 			<div class="custom-header-controls">
 				<calcite-button class="tablet-hide" class="calcite-button" appearance="outline"
@@ -53,10 +53,10 @@
 					target="_blank" icon-start="map-pin"></calcite-button>
 				<!--Dark Mode Switch -->
 				<!-- <calcite-label disable-spacing layout="inline" class="custom-label-wrapper">
-			<calcite-icon icon="brightness" scale="s"></calcite-icon>
-			<calcite-switch class="header-switch"></calcite-switch>
-			<calcite-icon icon="moon" scale="s"></calcite-icon>
-		  </calcite-label> -->
+				<calcite-icon icon="brightness" scale="s"></calcite-icon>
+				<calcite-switch class="header-switch"></calcite-switch>
+				<calcite-icon icon="moon" scale="s"></calcite-icon>
+			</calcite-label> -->
 			</div>
 		</div>
 		<calcite-shell-panel slot="primary-panel" detached class="sassy-theme">
@@ -72,12 +72,14 @@
 				</calcite-action>
 				<calcite-action data-action-id="Sketch" icon="annotate-tool" text="Draw"></calcite-action>
 				<calcite-action data-action-id="print" icon="print" text="Print"></calcite-action>
-				<calcite-action data-action-id="information" icon="information" text="Information"></calcite-action>
+				<calcite-action data-action-id="information" icon="information" text="Information">
+				</calcite-action>
 			</calcite-action-bar>
 
 			<!--Mobile widget Panel-->
 
 			<!-- map-specific panels (each one provides a div for a ArcGIS JavaScript API widget) -->
+
 			<calcite-panel heading="Layers" data-panel-id="layers" dismissible="" resizable="" hidden>
 				<header></header>
 				<div id="layers-container"></div>
@@ -113,8 +115,10 @@
 					<div id="item-description">
 						<!--dynamically populated-->
 					</div>
-					<p class="about">This Application contains all public content of the City of Round Rock. This
-						map is intended for viewing purposes only. <br><br> To download this data please visit the
+					<p class="about">This Application contains all public content of the City of Round Rock.
+						This
+						map is intended for viewing purposes only. <br><br> To download this data please visit
+						the
 						<br>
 						<stong><a style="color: #cc3333;" href="https://geohub.roundrocktexas.gov/" target="_blank">City
 								of Round Rock GeoHub</a></strong>
@@ -122,81 +126,34 @@
 				</div>
 			</calcite-panel>
 		</calcite-shell-panel>
-
 		<!--Map View-->
 
 		<div id="viewDiv" class="map_div"></div>
-		<div>
-			<calcite-shell-panel slot="primary-panel" detached class="tablet-show" class="sassy-theme">
+		<calcite-shell-panel slot="primary-panel" detached class="tablet-show" class="sassy-theme">
 
-				<calcite-action-group layout="grid" class="sassy-theme--mobile-panel">
-					<calcite-action alignment="center" scale="l" appearance="outline" icon="layers" polygon=""
-						data-action-id="layers"></calcite-action>
-					<calcite-action alignment="center" scale="l" appearance="outline" icon="basemap" polygon=""
-						data-action-id="basemaps"></calcite-action>
-					<calcite-action alignment="center" scale="l" appearance="outline" icon="legend" polygon=""
-						data-action-id="legend"></calcite-action>
-					<calcite-action alignment="center" scale="l" appearance="outline" icon="bookmark" polygon=""
-						data-action-id="bookmarks"></calcite-action>
-					<calcite-action alignment="center" scale="l" appearance="outline" icon="measure-line" polygon=""
-						data-action-id="DistanceMeasurement2D"></calcite-action>
-					<calcite-action alignment="center" scale="l" appearance="outline" icon="measure-area" polygon=""
-						data-action-id="AreaMeasurement2D"></calcite-action>
-					<calcite-action alignment="center" scale="l" appearance="outline" icon="annotate-tool" polygon=""
-						data-action-id="Sketch"></calcite-action>
-					<calcite-action alignment="center" scale="l" appearance="outline" icon="print" polygon=""
-						data-action-id="print"></calcite-action>
-					<calcite-action alignment="center" scale="l" appearance="outline" icon="information" polygon=""
-						data-action-id="information"></calcite-action>
-				</calcite-action-group>
+			<calcite-action-group layout="grid" class="sassy-theme--mobile-panel">
+				<calcite-action alignment="center" scale="l" appearance="outline" icon="layers" polygon=""
+					data-action-id="layers"></calcite-action>
+				<calcite-action alignment="center" scale="l" appearance="outline" icon="basemap" polygon=""
+					data-action-id="basemaps"></calcite-action>
+				<calcite-action alignment="center" scale="l" appearance="outline" icon="legend" polygon=""
+					data-action-id="legend"></calcite-action>
+				<calcite-action alignment="center" scale="l" appearance="outline" icon="bookmark" polygon=""
+					data-action-id="bookmarks"></calcite-action>
+				<calcite-action alignment="center" scale="l" appearance="outline" icon="measure-line" polygon=""
+					data-action-id="DistanceMeasurement2D"></calcite-action>
+				<calcite-action alignment="center" scale="l" appearance="outline" icon="measure-area" polygon=""
+					data-action-id="AreaMeasurement2D"></calcite-action>
+				<calcite-action alignment="center" scale="l" appearance="outline" icon="annotate-tool" polygon=""
+					data-action-id="Sketch"></calcite-action>
+				<calcite-action alignment="center" scale="l" appearance="outline" icon="print" polygon=""
+					data-action-id="print"></calcite-action>
+				<calcite-action alignment="center" scale="l" appearance="outline" icon="information" polygon=""
+					data-action-id="information"></calcite-action>
+			</calcite-action-group>
 
-				<!--Mobile widget Panel-->
-
-				<!-- map-specific panels (each one provides a div for a ArcGIS JavaScript API widget) -->
-				<!-- <calcite-panel intl-close="Close" closable="" heading="Layers" height-scale="s" data-panel-id="layers"
-					hidden>
-					<div id="layers-container"></div>
-				</calcite-panel>
-				<calcite-panel heading="Basemaps" height-scale="s" data-panel-id="basemaps" hidden>
-					<div id="basemaps-container"></div>
-				</calcite-panel>
-				<calcite-panel heading="Legend" height-scale="s" data-panel-id="legend" hidden>
-					<div id="legend-container"></div>
-				</calcite-panel>
-				<calcite-panel heading="Bookmarks" height-scale="l" data-panel-id="bookmarks" hidden>
-					<div id="bookmarks-container"></div>
-				</calcite-panel>
-				<calcite-panel heading="Sketch" height-scale="l" data-panel-id="Sketch" hidden>
-					<div id="sketch-container"></div>
-				</calcite-panel>
-				<calcite-panel heading="Distance Measurement" height-scale="l" data-panel-id="DistanceMeasurement2D"
-					hidden>
-					<div id="DistanceMeasurement2D-container"></div>
-				</calcite-panel>
-				<calcite-panel heading="Area Measurement" height-scale="l" data-panel-id="AreaMeasurement2D" hidden>
-					<div id="AreaMeasurement2D-container"></div>
-				</calcite-panel>
-				<calcite-panel heading="Print" height-scale="l" data-panel-id="print" hidden>
-					<div id="print-container"></div>
-				</calcite-panel>
-
-				<!-- info panel (populates with info from the web map) -->
-				<!-- <calcite-panel heading="About" data-panel-id="information" hidden>
-					<div id="info-content">
-						<!--<img id="item-thumbnail" alt="webmap thumbnail" />-->
-				<!-- <div id="item-description"> -->
-				<!--dynamically populated-->
-				<!-- </div>
-						<p class="about">This Application contains all public content of the City of Round Rock.
-							This map is intended for viewing purposes only. <br><br> To download this data
-							please visit the <br>
-							<stong><a style="color: #cc3333;" href="https://geohub.roundrocktexas.gov/"
-									target="_blank">City of Round Rock GeoHub</a></strong>
-						</p>
-					</div>
-				</calcite-panel> -->
-			</calcite-shell-panel>
-		</div>
+			<!--Mobile widget Panel-->
+		</calcite-shell-panel>
 	</calcite-shell>
 	<!---Mobile Widget Toggle--->
 	<!-- <button class="nav-toggle" aria-label="toggle navigation">
